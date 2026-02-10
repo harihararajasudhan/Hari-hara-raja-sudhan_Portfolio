@@ -1,0 +1,166 @@
+body{
+  margin:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+  overflow-x: hidden;
+}
+
+.container{
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 80px;
+  padding: 40px 20px;
+}
+
+.profile-circle {
+  font-size: 100px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.role {
+  color: #64b5f6;
+  font-size: 18px;
+  margin: 10px 0 30px 0;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+
+.primary {
+  background: #64b5f6;
+  color: #0f172a;
+}
+
+.primary:hover {
+  background: #90caf9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(100, 181, 246, 0.3);
+}
+
+.secondary {
+  border: 2px solid #64b5f6;
+  color: #64b5f6;
+  background: transparent;
+}
+
+.secondary:hover {
+  background: rgba(100, 181, 246, 0.1);
+  transform: translateY(-2px);
+}
+
+.card {
+  background: rgba(30, 41, 59, 0.6);
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(100, 181, 246, 0.2);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #90caf9;
+  font-size: 24px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.skills span {
+  background: #64b5f6;
+  color: #0f172a;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.project {
+  background: rgba(100, 181, 246, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid #64b5f6;
+}
+
+.project h4 {
+  margin: 0 0 8px 0;
+  color: #e0e7ff;
+}
+
+.project p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.hire {
+  text-align: center;
+  padding: 50px 30px;
+  background: rgba(100, 181, 246, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(100, 181, 246, 0.3);
+  margin-top: 50px;
+}
+
+.hire h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hire p {
+  color: #cbd5e1;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
